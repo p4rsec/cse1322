@@ -49,7 +49,8 @@ class Blah {
 		int[] data = new int[20];
 		data = randData();
 		
-		System.out.printf("Largest value in 'nums' is %d and largest value in 'data' is %d.\n\n",findLargest(nums),findLargest(data));
+		System.out.printf("Largest value in 'nums' is %d and largest value in 'data' is %d.\n",findLargest(nums),findLargest(data));
+		System.out.printf("The sum of the two largest values is %d\n\n",findLargest(nums)+findLargest(data));
 		System.out.println("Values in 'data': ");
 		for(int i=0;i<data.length;i++){
 			if(i == (data.length - 1))
