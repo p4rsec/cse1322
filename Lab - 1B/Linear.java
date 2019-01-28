@@ -1,7 +1,6 @@
 // Seth Beckman
 
 import java.util.*;
-import java.io.*;
 class Linear {
 	private static int[] randData(){
 			int[] data = new int[20];

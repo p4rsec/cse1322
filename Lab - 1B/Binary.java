@@ -1,7 +1,6 @@
 // Seth Beckman
 
 import java.util.*;
-import java.io.*;
 class Binary {
 	public static int BinarySearch(int[] arr, int target){
 		int low=0,high=arr.length,mid=0,index=0;
@@ -45,6 +44,22 @@ class Binary {
 		}
 	
 	public static void main(String[] args) {
+		int[] nums1 = {1, 4, 4, 22, -5, 10, 21, -47, 23};
+		int[] nums2 = new int[20];
+		nums2 = randData();
 		
+		if(!(BinarySearch(nums1, 21) == -1)){
+			System.out.printf("The index for nums1 is %d.\n",BinarySearch(nums1,21));
+		}
+		else {
+			System.out.println("The index was not found.");
+		}
+		
+		if(!(BinarySearch(nums2, 85) == -1)){
+			System.out.printf("The index for nums1 is %d.\n",BinarySearch(nums2,85));
+		}
+		else {
+			System.out.println("The index was not found.");
+		}
 	}
 }
