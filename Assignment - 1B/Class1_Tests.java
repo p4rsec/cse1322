@@ -24,7 +24,8 @@ public class Class1_Tests{
             String last = sc.nextLine();
 
             for(int t=0;t<scores.length;t++){
-                scores[i] = sc.nextInt();
+                scores[t] = sc.nextInt();
+                sc.nextLine();
             }
             System.out.println();
             class1[i] = new Student(first,last,scores); // instantiates student object within array
