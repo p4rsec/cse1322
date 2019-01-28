@@ -30,6 +30,10 @@ public class Student{
         return fullName;
     }
 
+    public double getAverage(){
+        return average;
+    }
+
     /*
         adds all indices together and takes the average to get
         the average score in the form of a double.
@@ -83,7 +87,7 @@ public class Student{
     }
 
     public String toString(){
-        return getName() + "\t\t\t" + scores[0] + "\t" + scores[1] + "\t" + scores[2] + "\t" + scores[3] +
-                "\t" + scores[4] + "\t" + average + "\t" + grade;
+        return first+"\t\t\t"+last+"\t\t\t"+scores[0]+"\t"+ scores[1]+"\t"+scores[2]+"\t"+scores[3]+
+                "\t"+scores[4]+"\t"+average+"\t"+grade;
     }
 }
