@@ -1,7 +1,7 @@
 public class Student{
     String first, last;
-    int[] scores = new int[5]{0,0,0,0,0};
-    float average = 0.0;
+    int[] scores = new int[5];
+    double average = 0.0;
     char grade = ' ';
 
     /*
@@ -17,29 +17,30 @@ public class Student{
         this.grade = setGrade(average);
     }
 
-    public static int[] getScores(){
+    public int[] getScores(){
         return scores;
     }
 
-    public static char getGrade(){
+    public char getGrade(){
         return grade;
     }
 
-    public static String getName(){
+    public String getName(){
         String fullName = first + ' ' + last;
         return fullName;
     }
 
     /*
         adds all indices together and takes the average to get
-        the average score in the form of a float.
+        the average score in the form of a double.
      */
 
-    private static float setAverage(int[] scores){
+    private double setAverage(int[] scores){
         int total = 0;
         for(int i=0;i<scores.length;i++)
             total += scores[i];
-        average = (float)total/5.0;
+        average = (double)total/5.0;
+        return average;
     }
 
     /*
@@ -48,38 +49,41 @@ public class Student{
         the letter grade.
      */
 
-    private static char setGrade(float average){
+    private static char setGrade(double average){
         int avg = (int)average;
         avg /= 10;
+        char grade = ' ';
 
         switch (avg)
         {
             case 10:
-                return 'A';
+                grade = 'A';
                 break;
             case 9:
-                return 'A';
+                grade = 'A';
                 break;
             case 8:
-                return 'B';
+                grade = 'B';
                 break;
             case 7:
-                return 'C';
+                grade = 'C';
                 break;
             case 6:
-                return 'F';
+                grade = 'F';
                 break;
             default:
                 if(avg>10)
-                    return 'A';
+                    grade = 'A';
                 else if(avg<6)
-                    return 'F';
+                    grade = 'F';
                 break;
         }
+        
+        return grade;
     }
 
     public String toString(){
         return getName() + "\t\t\t" + scores[0] + "\t" + scores[1] + "\t" + scores[2] + "\t" + scores[3] +
-                "\t" + scores[4] + "\t" + average + "\t" + grade
+                "\t" + scores[4] + "\t" + average + "\t" + grade;
     }
 }
