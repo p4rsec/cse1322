@@ -73,7 +73,7 @@ public class Student{
                 grade = 'C';
                 break;
             case 6:
-                grade = 'F';
+                grade = 'D';
                 break;
             default:
                 if(avg>10)

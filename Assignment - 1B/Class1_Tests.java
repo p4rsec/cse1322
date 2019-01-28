@@ -36,7 +36,7 @@ public class Class1_Tests{
         }
         class_avg /= 10.0;
 
-        System.out.println("First Name\t\t\tLastName\t\t\tTest1\tTest2\tTest3\tTest4\tTest5\tAverage\tGrade");
+        System.out.println("First\t\tLast\t\tTest1\tTest2\tTest3\tTest4\tTest5\tAverage\tGrade");
         for(int i=0;i<class1.length;i++){
             System.out.println(class1[i]);
         }
