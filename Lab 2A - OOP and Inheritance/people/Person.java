@@ -18,7 +18,4 @@ public class Person {
 		return "Person [name=" + name + ", phoneNumber=" + phoneNumber + ", address=" + address + ", email=" + email
 				+ "]";
 	}
-	
-	
-
 }
