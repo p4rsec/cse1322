@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="Assignment - 3B"/>
 	<classpathentry kind="src" path="Lab - 3B"/>
 	<classpathentry kind="src" path="Assignment - 4"/>
+	<classpathentry kind="src" path="Lab - 5B"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
 		<attributes>
 			<attribute name="module" value="true"/>
